@@ -3,7 +3,7 @@ import './Comentario.css'
 
 //JSX
 const Comentario = () => (
-    <div class="Comentario">
+    <div className="Comentario">
         <div>João:</div>
         <div>Olá, tudo bem?</div>
     </div>
