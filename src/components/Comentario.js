@@ -5,7 +5,7 @@ import './Comentario.css'
 const Comentario = () => (
     <div className="Comentario">
         <div>João:</div>
-        <div>Olá, tudo bem?</div>
+        <div>Olá, tudo bem? {2 + 3}</div>
     </div>
 );
 
