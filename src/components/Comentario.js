@@ -2,7 +2,7 @@ import React from 'react'
 
 //JSX
 const Comentario = () => (
-    <div>Olá, eu sou um componente</div>
+    <div>Olá, tudo bem?</div>
 );
 
 export default Comentario

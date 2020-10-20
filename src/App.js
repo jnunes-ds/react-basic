@@ -8,6 +8,8 @@ function App() {
     <div className="App">
       <h1>Meu projeto</h1>
       <Comentario />
+      <Comentario />
+      <Comentario />
     </div>
   );
 }
