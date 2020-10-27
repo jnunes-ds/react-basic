@@ -31,10 +31,14 @@ class App extends Component {
       mensagem: 'Olá pessoal!!!'
     }
 
-    let lista = this.state.comentarios
-    lista.push(novoComentario)
+    // let lista = this.state.comentarios
+    // lista.push(novoComentario)
+    // this.setState({ comentarios: lista })
 
-    this.setState({ comentarios: lista })
+    this.setState({
+      comentarios: [ ...this.state.comentarios, novoComentario ]
+    })
+
   }
   
   render() {
