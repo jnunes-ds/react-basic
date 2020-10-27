@@ -20,6 +20,10 @@ class App extends Component {
       }
     ]
   }
+
+  adicionarComentario = () =>{
+    console.log("Adicionando comentário")
+  }
   
   render() {
     return (
@@ -35,6 +39,8 @@ class App extends Component {
             {comentario.mensagem}
           </Comentario>
         ))}
+
+        <button>Adicionar um comentario</button>
       </div>
     );
   }
