@@ -27,24 +27,13 @@ class App extends Component {
   }
 
   adicionarComentario = evento =>{
-
-    evento.prevenDefault();
-    console.log("Adicionando comentário...")
-
-    // const novoComentario = {
-    //   nome: 'Maria',
-    //   email: 'maria@mail.com',
-    //   data: new Date(),
-    //   mensagem: 'Olá pessoal!!!'
-    // }
-
-    const novoComentario = { ...this.state.novoComentario, data: new Date()}; 
-
-    // let lista = this.state.comentarios
-    // lista.push(novoComentario)
-    // this.setState({ comentarios: lista })
-
-    this.setState({comentarios: [ ...this.state.comentarios, novoComentario ]})
+    
+    evento.preventDefault();
+    const novoComentario = { ...this.state.novoComentario, data: new Date() }; 
+    this.setState({ 
+      comentarios: [ ...this.state.comentarios, novoComentario ],
+      novoComentario: { nome: '', email: '', mensagem: '' }
+     })
 
   }
 
