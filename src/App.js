@@ -37,6 +37,12 @@ class App extends Component {
 
   }
 
+  removerComentario = comentario => {
+    let lista = this.state.comentarios;
+    lista = lista.filter(c => c !== comentario)
+    this.setState({ comentarios: lista })
+  }
+
   digitacao = evento => {
     const { name, value } = evento.target;
     this.setState({ novoComentario: { ...this.state.novoComentario, [name]: value } })
