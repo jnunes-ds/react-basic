@@ -31,12 +31,14 @@ class App extends Component {
     evento.prevenDefault();
     console.log("Adicionando comentário...")
 
-    const novoComentario = {
-      nome: 'Maria',
-      email: 'maria@mail.com',
-      data: new Date(),
-      mensagem: 'Olá pessoal!!!'
-    }
+    // const novoComentario = {
+    //   nome: 'Maria',
+    //   email: 'maria@mail.com',
+    //   data: new Date(),
+    //   mensagem: 'Olá pessoal!!!'
+    // }
+
+    const novoComentario = { ...this.state.novoComentario, data: new Date()}; 
 
     // let lista = this.state.comentarios
     // lista.push(novoComentario)
