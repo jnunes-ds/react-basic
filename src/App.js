@@ -58,7 +58,8 @@ class App extends Component {
           key = {indice}
           nome={comentario.nome}
           email={comentario.email} 
-          data={comentario.data}>
+          data={comentario.data}
+          onRemove={this.removerComentario.bind(this, comentario)}>
             {comentario.mensagem}
           </Comentario>
         ))}
